@@ -15,19 +15,19 @@ namespace ariel{
         int x = 0;
     }
     NumberWithUnits NumberWithUnits::operator+(const NumberWithUnits& other) const {
-        NumberWithUnits a{(num+other.num),sizeUnit};
+        NumberWithUnits a{0,sizeUnit};
     return a;
     }
     NumberWithUnits NumberWithUnits::operator-=(const NumberWithUnits& other){
-        NumberWithUnits a{(num-other.num),sizeUnit};
+        NumberWithUnits a{0,sizeUnit};
         return a;
     }
     NumberWithUnits NumberWithUnits::operator-(const NumberWithUnits& other) const {
-        NumberWithUnits a{(num-other.num),sizeUnit};
+        NumberWithUnits a{0,sizeUnit};
     return a;
     }
     NumberWithUnits NumberWithUnits::operator+=(const NumberWithUnits& other){
-        NumberWithUnits a{(num-other.num),sizeUnit};
+        NumberWithUnits a{0,sizeUnit};
         return a;
     }
     void NumberWithUnits::operator++(){
